@@ -1,0 +1,9 @@
+_G.Win = true
+
+while _G.Win == true do
+local args = { 
+    [1] = true
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Event"):WaitForChild("Game"):WaitForChild("[C-S]PlayerPKEnd"):FireServer(unpack(args))
+wait()
+end
